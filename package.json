@@ -1,0 +1,22 @@
+{
+  "name": "demo-ui-craft-skill",
+  "version": "0.1.0",
+  "description": "Repo-local Agent Skill installer for polished animated demo UI generation.",
+  "license": "MIT",
+  "bin": {
+    "demo-ui-craft-skill": "scripts/install-npx.cjs"
+  },
+  "files": [
+    ".agents/skills/demo-ui-craft/**",
+    "scripts/install-npx.cjs",
+    "README.md"
+  ],
+  "keywords": [
+    "agent-skill",
+    "codex",
+    "antigravity",
+    "ui",
+    "demo-ui",
+    "animation"
+  ]
+}
