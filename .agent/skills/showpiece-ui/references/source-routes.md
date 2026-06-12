@@ -1,4 +1,4 @@
-﻿# Audited Source Route Snapshot
+# Audited Source Route Snapshot
 
 Generated from public sitemaps during skill creation. Use `rg "term" references/source-routes.md` to find route-level coverage without loading this whole file into context.
 

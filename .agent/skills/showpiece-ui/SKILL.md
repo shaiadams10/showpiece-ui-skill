@@ -1,9 +1,9 @@
 ---
-name: demo-ui-craft
+name: showpiece-ui
 description: Create stunning animated demo UIs, product-showcase screens, launch visuals, agent demos, SaaS hero demos, browser/terminal walkthroughs, chat bubble flows, MacBook/device mockups, cursor-driven interactions, data-flow diagrams, cinematic Remotion scenes, and polished React/Tailwind/Framer Motion interfaces. Use when the user asks for modern demo visuals, animated UI components, product storytelling screens, impressive prototype UIs, video-ready UI compositions, or help choosing/generating visual patterns from libraries such as 21st.dev, Aceternity UI, React Bits, and remocn.
 ---
 
-# Demo UI Craft
+# Showpiece UI
 
 ## Goal
 
@@ -79,3 +79,4 @@ The output should have:
 - `references/implementation-recipes.md`: React/Tailwind/Motion/Remotion recipes and validation checks.
 - `references/portability.md`: Codex and Antigravity skill compatibility and install locations.
 - `references/source-routes.md`: exhaustive route snapshot from the audited public sitemaps; search with `rg`.
+

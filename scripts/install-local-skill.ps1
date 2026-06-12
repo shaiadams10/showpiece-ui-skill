@@ -6,14 +6,14 @@ param(
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Resolve-Path -LiteralPath (Join-Path $PSScriptRoot "..")
-$canonical = Join-Path $repoRoot ".agents/skills/demo-ui-craft"
+$canonical = Join-Path $repoRoot ".agents/skills/showpiece-ui"
 $targetRoot = if ($TargetProject) {
   Resolve-Path -LiteralPath $TargetProject
 } else {
   $repoRoot
 }
-$skillDest = Join-Path $targetRoot ".agents/skills/demo-ui-craft"
-$cliMirror = Join-Path $targetRoot ".agent/skills/demo-ui-craft"
+$skillDest = Join-Path $targetRoot ".agents/skills/showpiece-ui"
+$cliMirror = Join-Path $targetRoot ".agent/skills/showpiece-ui"
 
 if (-not (Test-Path -LiteralPath (Join-Path $canonical "SKILL.md"))) {
   throw "Canonical skill is missing: $canonical"
@@ -54,3 +54,4 @@ if (-not $SkipAntigravityCliMirror) {
 }
 
 Write-Host "No global skill locations were modified."
+

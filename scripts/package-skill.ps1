@@ -1,11 +1,11 @@
 param(
-  [string]$OutputPath = "dist/demo-ui-craft-skill.zip"
+  [string]$OutputPath = "dist/showpiece-ui-skill.zip"
 )
 
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Resolve-Path -LiteralPath (Join-Path $PSScriptRoot "..")
-$skillPath = Join-Path $repoRoot ".agents/skills/demo-ui-craft"
+$skillPath = Join-Path $repoRoot ".agents/skills/showpiece-ui"
 $output = Join-Path $repoRoot $OutputPath
 $outputParent = Split-Path -Parent $output
 
@@ -21,3 +21,4 @@ if (Test-Path -LiteralPath $output) {
 Compress-Archive -LiteralPath $skillPath -DestinationPath $output
 Write-Host "Packaged skill:"
 Write-Host "  $output"
+

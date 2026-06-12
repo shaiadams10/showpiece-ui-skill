@@ -1,4 +1,0 @@
-interface:
-  display_name: "Demo UI Craft"
-  short_description: "Create polished animated demo UIs"
-  default_prompt: "Use $demo-ui-craft to design and implement a polished animated demo UI for the current product context."

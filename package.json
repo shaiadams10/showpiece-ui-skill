@@ -1,13 +1,13 @@
 {
-  "name": "demo-ui-craft-skill",
+  "name": "showpiece-ui-skill",
   "version": "0.1.0",
   "description": "Repo-local Agent Skill installer for polished animated demo UI generation.",
   "license": "MIT",
   "bin": {
-    "demo-ui-craft-skill": "scripts/install-npx.cjs"
+    "showpiece-ui-skill": "scripts/install-npx.cjs"
   },
   "files": [
-    ".agents/skills/demo-ui-craft/**",
+    ".agents/skills/showpiece-ui/**",
     "scripts/install-npx.cjs",
     "README.md"
   ],
@@ -20,3 +20,4 @@
     "animation"
   ]
 }
+

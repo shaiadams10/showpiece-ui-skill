@@ -2,7 +2,7 @@
 set -euo pipefail
 
 TARGET_PROJECT="${TARGET_PROJECT:-$(pwd)}"
-REPO="${REPO:-shaiadams10/demo-ui-craft-skill}"
+REPO="${REPO:-shaiadams10/showpiece-ui-skill}"
 REF="${REF:-main}"
 SKIP_ANTIGRAVITY_CLI_MIRROR="${SKIP_ANTIGRAVITY_CLI_MIRROR:-0}"
 
@@ -34,14 +34,14 @@ fi
 
 unzip -q "$ZIP_PATH" -d "$EXTRACT_PATH"
 SOURCE_ROOT="$(find "$EXTRACT_PATH" -mindepth 1 -maxdepth 1 -type d | head -n 1)"
-SOURCE_SKILL="$SOURCE_ROOT/.agents/skills/demo-ui-craft"
+SOURCE_SKILL="$SOURCE_ROOT/.agents/skills/showpiece-ui"
 
 if [[ ! -f "$SOURCE_SKILL/SKILL.md" ]]; then
-  echo "Downloaded archive did not contain .agents/skills/demo-ui-craft/SKILL.md" >&2
+  echo "Downloaded archive did not contain .agents/skills/showpiece-ui/SKILL.md" >&2
   exit 1
 fi
 
-CODEX_DEST="$TARGET_PROJECT/.agents/skills/demo-ui-craft"
+CODEX_DEST="$TARGET_PROJECT/.agents/skills/showpiece-ui"
 mkdir -p "$(dirname "$CODEX_DEST")"
 rm -rf "$CODEX_DEST"
 cp -R "$SOURCE_SKILL" "$(dirname "$CODEX_DEST")/"
@@ -49,10 +49,11 @@ echo "Installed repo-local skill:"
 echo "  $CODEX_DEST"
 
 if [[ "$SKIP_ANTIGRAVITY_CLI_MIRROR" != "1" ]]; then
-  CLI_DEST="$TARGET_PROJECT/.agent/skills/demo-ui-craft"
+  CLI_DEST="$TARGET_PROJECT/.agent/skills/showpiece-ui"
   mkdir -p "$(dirname "$CLI_DEST")"
   rm -rf "$CLI_DEST"
   cp -R "$SOURCE_SKILL" "$(dirname "$CLI_DEST")/"
   echo "Installed Antigravity CLI project mirror:"
   echo "  $CLI_DEST"
 fi
+

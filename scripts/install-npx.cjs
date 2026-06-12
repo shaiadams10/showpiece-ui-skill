@@ -29,11 +29,11 @@ function parseArgs(argv) {
 }
 
 function printHelp() {
-  console.log(`demo-ui-craft-skill installer
+  console.log(`showpiece-ui-skill installer
 
 Usage:
-  npx github:shaiadams10/demo-ui-craft-skill
-  npx github:shaiadams10/demo-ui-craft-skill -- --target /path/to/project
+  npx github:shaiadams10/showpiece-ui-skill
+  npx github:shaiadams10/showpiece-ui-skill -- --target /path/to/project
 
 Options:
   -t, --target <dir>                 Target project root. Defaults to cwd.
@@ -56,20 +56,20 @@ function main() {
   }
 
   const packageRoot = path.resolve(__dirname, "..");
-  const sourceSkill = path.join(packageRoot, ".agents", "skills", "demo-ui-craft");
+  const sourceSkill = path.join(packageRoot, ".agents", "skills", "showpiece-ui");
   const targetRoot = path.resolve(args.target);
 
   if (!fs.existsSync(path.join(sourceSkill, "SKILL.md"))) {
     throw new Error(`Skill source is missing: ${sourceSkill}`);
   }
 
-  const codexDest = path.join(targetRoot, ".agents", "skills", "demo-ui-craft");
+  const codexDest = path.join(targetRoot, ".agents", "skills", "showpiece-ui");
   copyDirectory(sourceSkill, codexDest);
   console.log("Installed repo-local skill:");
   console.log(`  ${codexDest}`);
 
   if (!args.skipAntigravityCliMirror) {
-    const antigravityCliDest = path.join(targetRoot, ".agent", "skills", "demo-ui-craft");
+    const antigravityCliDest = path.join(targetRoot, ".agent", "skills", "showpiece-ui");
     copyDirectory(sourceSkill, antigravityCliDest);
     console.log("Installed Antigravity CLI project mirror:");
     console.log(`  ${antigravityCliDest}`);
@@ -82,3 +82,4 @@ try {
   console.error(error.message);
   process.exit(1);
 }
+
