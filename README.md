@@ -88,6 +88,7 @@ Use $animated-showcase-ui to build a browser-use product demo with chat, cursor 
 - `references/visual-language.md`: demo archetypes and storytelling rules.
 - `references/component-bank.md`: audited source libraries and when to use them.
 - `references/implementation-recipes.md`: React, Tailwind, Motion, and Remotion build patterns.
+- `references/quality-loop.md`: visual QA loop and failure checklist for avoiding cramped, low-quality demo scenes.
 - `references/source-routes.md`: searchable route snapshot for audited component sources.
 
 ## Credits And Component Sources
@@ -123,4 +124,11 @@ Package the skill:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/package-skill.ps1
+```
+
+Regenerate and check the README demo asset:
+
+```powershell
+python scripts/generate-readme-demo.py
+python scripts/check-readme-demo.py
 ```

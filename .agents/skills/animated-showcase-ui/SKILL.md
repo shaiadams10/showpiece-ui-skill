@@ -18,7 +18,8 @@ The skill should be especially useful when the user is not visually specific. Tr
 3. Pick a primary visual metaphor from `references/visual-language.md`.
 4. Choose implementation sources from `references/component-bank.md`.
 5. Build or adapt code in the host project using the existing stack first.
-6. Verify visually in a browser or renderer, including desktop and mobile when applicable.
+6. Apply the quality loop from `references/quality-loop.md`.
+7. Verify visually in a browser or renderer, including desktop and mobile when applicable.
 
 If the user asks for a complete source audit, search `references/source-routes.md` with `rg`; do not load the whole file into context unless the user explicitly asks for the full route list.
 
@@ -31,6 +32,7 @@ If the user asks for a complete source audit, search `references/source-routes.m
 - Design for capture: keep important action inside a 16:9 safe area, avoid tiny text, and make motion readable at 1x playback.
 - Build real UI where possible. Use generated bitmap assets for hero backdrops, contextual product imagery, avatars, thumbnails, or cards when they communicate the domain better than abstract gradients.
 - Use reduced-motion fallbacks for interaction-heavy or background-heavy effects.
+- Reject first drafts with obvious visual defects. Fix text containment, spacing, hierarchy, palette, and motion purpose before calling the work done.
 
 ## Decision Guide
 
@@ -81,6 +83,7 @@ The output should have:
 - `references/visual-taxonomy.md`: expanded bank of high-impact animated visual systems and motion pairings.
 - `references/component-bank.md`: audited libraries, categories, when to use each source.
 - `references/implementation-recipes.md`: React/Tailwind/Motion/Remotion recipes and validation checks.
+- `references/quality-loop.md`: visual QA process, failure checklist, and automated demo-asset checks.
 - `references/portability.md`: Codex and Antigravity skill compatibility and install locations.
 - `references/source-routes.md`: exhaustive route snapshot from the audited public sitemaps; search with `rg`.
 

@@ -26,6 +26,7 @@ When improving the skill, expand reusable visual systems and decision rules rath
 - `.agents/skills/animated-showcase-ui/references/visual-taxonomy.md`
 - `.agents/skills/animated-showcase-ui/references/visual-language.md`
 - `.agents/skills/animated-showcase-ui/references/component-bank.md`
+- `.agents/skills/animated-showcase-ui/references/quality-loop.md`
 
 ## Packaging
 
@@ -34,4 +35,5 @@ When improving the skill, expand reusable visual systems and decision rules rath
 - Use `scripts/install-from-github.ps1` and `scripts/install-from-github.sh` as the public raw-GitHub installer entrypoints documented in `README.md`.
 - Use `scripts/package-skill.ps1` to build `dist/animated-showcase-ui-skill.zip` from the canonical skill.
 - Use `scripts/remove-global-skill.ps1` to remove accidental global installs of this exact skill name.
+- Use `scripts/generate-readme-demo.py` and `scripts/check-readme-demo.py` when changing the README hero animation.
 

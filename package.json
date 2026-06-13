@@ -8,6 +8,9 @@
   },
   "files": [
     ".agents/skills/animated-showcase-ui/**",
+    "assets/animated-showcase-ui-demo.gif",
+    "scripts/check-readme-demo.py",
+    "scripts/generate-readme-demo.py",
     "scripts/install-npx.cjs",
     "README.md"
   ],
