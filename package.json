@@ -1,13 +1,13 @@
 {
-  "name": "showpiece-ui-skill",
+  "name": "animated-showcase-ui-skill",
   "version": "0.1.0",
   "description": "Repo-local Agent Skill installer for polished animated demo UI generation.",
   "license": "MIT",
   "bin": {
-    "showpiece-ui-skill": "scripts/install-npx.cjs"
+    "animated-showcase-ui-skill": "scripts/install-npx.cjs"
   },
   "files": [
-    ".agents/skills/showpiece-ui/**",
+    ".agents/skills/animated-showcase-ui/**",
     "scripts/install-npx.cjs",
     "README.md"
   ],

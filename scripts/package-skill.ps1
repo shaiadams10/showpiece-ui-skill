@@ -1,11 +1,11 @@
 param(
-  [string]$OutputPath = "dist/showpiece-ui-skill.zip"
+  [string]$OutputPath = "dist/animated-showcase-ui-skill.zip"
 )
 
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Resolve-Path -LiteralPath (Join-Path $PSScriptRoot "..")
-$skillPath = Join-Path $repoRoot ".agents/skills/showpiece-ui"
+$skillPath = Join-Path $repoRoot ".agents/skills/animated-showcase-ui"
 $output = Join-Path $repoRoot $OutputPath
 $outputParent = Split-Path -Parent $output
 

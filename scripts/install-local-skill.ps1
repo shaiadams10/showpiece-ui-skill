@@ -6,14 +6,14 @@ param(
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Resolve-Path -LiteralPath (Join-Path $PSScriptRoot "..")
-$canonical = Join-Path $repoRoot ".agents/skills/showpiece-ui"
+$canonical = Join-Path $repoRoot ".agents/skills/animated-showcase-ui"
 $targetRoot = if ($TargetProject) {
   Resolve-Path -LiteralPath $TargetProject
 } else {
   $repoRoot
 }
-$skillDest = Join-Path $targetRoot ".agents/skills/showpiece-ui"
-$cliMirror = Join-Path $targetRoot ".agent/skills/showpiece-ui"
+$skillDest = Join-Path $targetRoot ".agents/skills/animated-showcase-ui"
+$cliMirror = Join-Path $targetRoot ".agent/skills/animated-showcase-ui"
 
 if (-not (Test-Path -LiteralPath (Join-Path $canonical "SKILL.md"))) {
   throw "Canonical skill is missing: $canonical"

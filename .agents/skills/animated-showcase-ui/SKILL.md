@@ -1,27 +1,31 @@
 ---
-name: showpiece-ui
-description: Create stunning animated demo UIs, product-showcase screens, launch visuals, agent demos, SaaS hero demos, browser/terminal walkthroughs, chat bubble flows, MacBook/device mockups, cursor-driven interactions, data-flow diagrams, cinematic Remotion scenes, and polished React/Tailwind/Framer Motion interfaces. Use when the user asks for modern demo visuals, animated UI components, product storytelling screens, impressive prototype UIs, video-ready UI compositions, or help choosing/generating visual patterns from libraries such as 21st.dev, Aceternity UI, React Bits, and remocn.
+name: animated-showcase-ui
+description: Create stunning animated showcase UIs, animated product-demo visuals, modern launch scenes, agent demos, SaaS hero demos, browser/terminal walkthroughs, chat bubble flows, MacBook/device mockups, cursor-driven interactions, data-flow diagrams, cinematic Remotion scenes, and polished React/Tailwind/Framer Motion interfaces. Use when the user asks for vague or specific visual direction such as "modern cool animated visuals", "make this look impressive", "create an animated product demo", "build a showcase UI", "make a beautiful animated landing demo", or help choosing/generating visual patterns from libraries such as 21st.dev, Aceternity UI, React Bits, and remocn.
 ---
 
-# Showpiece UI
+# Animated Showcase UI
 
 ## Goal
 
 Produce demo UIs that feel like high-end product launches: clear narrative, premium motion, believable product surfaces, dense but legible UI detail, and visuals selected for the product context rather than generic decoration.
 
+The skill should be especially useful when the user is not visually specific. Treat vague asks like "make it modern", "make cool animated visuals", "make it look like a premium demo", or "make this more impressive" as a request to choose the creative direction for them.
+
 ## First Move
 
 1. Identify the demo story in one sentence: actor, product, transformation, proof.
-2. Pick a primary visual metaphor from `references/visual-language.md`.
-3. Choose implementation sources from `references/component-bank.md`.
-4. Build or adapt code in the host project using the existing stack first.
-5. Verify visually in a browser or renderer, including desktop and mobile when applicable.
+2. If the user is vague, do not stall for detailed visual instructions; choose a strong visual direction from `references/visual-taxonomy.md`.
+3. Pick a primary visual metaphor from `references/visual-language.md`.
+4. Choose implementation sources from `references/component-bank.md`.
+5. Build or adapt code in the host project using the existing stack first.
+6. Verify visually in a browser or renderer, including desktop and mobile when applicable.
 
 If the user asks for a complete source audit, search `references/source-routes.md` with `rg`; do not load the whole file into context unless the user explicitly asks for the full route list.
 
 ## Visual Direction Rules
 
 - Lead with the product surface: browser window, chat, terminal, workflow canvas, dashboard, device mockup, or generated contextual media.
+- When the user is not creative or not exact, be creative on their behalf: propose and implement the strongest fitting scene rather than asking for a component list.
 - Combine at most one large scene, one motion accent system, and one text reveal system. Too many effects makes a demo look noisy.
 - Prefer meaningful motion: cursor paths show intent, arrows show causality, panels reveal progress, terminal lines prove work, charts populate with outcome.
 - Design for capture: keep important action inside a 16:9 safe area, avoid tiny text, and make motion readable at 1x playback.

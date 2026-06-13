@@ -2,7 +2,7 @@
 
 The skill content is intentionally standard Agent Skills format:
 
-- Folder named `showpiece-ui`.
+- Folder named `animated-showcase-ui`.
 - Required `SKILL.md`.
 - YAML frontmatter with `name` and `description`.
 - Markdown instructions in the body.
@@ -11,13 +11,13 @@ The skill content is intentionally standard Agent Skills format:
 
 ## Install Locations
 
-This repository keeps the canonical skill in `.agents/skills/showpiece-ui`. Use the same `showpiece-ui` folder in the target skill directory only when intentionally installing elsewhere.
+This repository keeps the canonical skill in `.agents/skills/animated-showcase-ui`. Use the same `animated-showcase-ui` folder in the target skill directory only when intentionally installing elsewhere.
 
 | Tool | Global | Project |
 | --- | --- | --- |
-| Codex | `~/.agents/skills/showpiece-ui` | `<project-root>/.agents/skills/showpiece-ui` |
-| Antigravity desktop | `~/.agents/skills/showpiece-ui` | `<project-root>/.agents/skills/showpiece-ui` |
-| Antigravity CLI | `~/.gemini/antigravity-cli/skills/showpiece-ui` | `<project-root>/.agent/skills/showpiece-ui` |
+| Codex | `~/.agents/skills/animated-showcase-ui` | `<project-root>/.agents/skills/animated-showcase-ui` |
+| Antigravity desktop | `~/.agents/skills/animated-showcase-ui` | `<project-root>/.agents/skills/animated-showcase-ui` |
+| Antigravity CLI | `~/.gemini/antigravity-cli/skills/animated-showcase-ui` | `<project-root>/.agent/skills/animated-showcase-ui` |
 
 For this repo, do not use the global locations. Run `scripts/install-local-skill.ps1` from the repository root to keep the Antigravity CLI project mirror in sync.
 

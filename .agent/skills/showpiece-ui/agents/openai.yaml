@@ -1,5 +1,0 @@
-interface:
-  display_name: "Showpiece UI"
-  short_description: "Create polished animated demo UIs"
-  default_prompt: "Use $showpiece-ui to design and implement a polished animated demo UI for the current product context."
-

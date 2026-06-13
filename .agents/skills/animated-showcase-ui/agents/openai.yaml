@@ -1,0 +1,5 @@
+interface:
+  display_name: "Animated Showcase UI"
+  short_description: "Invent animated product-demo UIs"
+  default_prompt: "Use $animated-showcase-ui to invent and implement modern animated showcase visuals for the current product context."
+
